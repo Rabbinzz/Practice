@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CV — Rabbin Zaman</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+<div id="noise"></div>
+<div id="cursor-ring"></div>
+<div id="cursor-dot"></div>
+
+<header class="site-header">
+  <div class="wrap nav-row">
+    <a href="index.html" class="site-mark">Rabbin Zaman</a>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="blog.html">Blog</a>
+      <a href="cv.html" class="active">CV</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div style="display:flex; align-items:center; gap:14px;">
+      <button id="theme-toggle" aria-label="Toggle theme">☀</button>
+      <button id="nav-burger" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <div class="page-head reveal">
+    <p class="eyebrow">CV</p>
+    <h1>Experience & education</h1>
+    <p>[A one-line summary of your professional background.] — <a href="#" style="color:var(--accent); text-decoration:none;">Download PDF</a></p>
+  </div>
+
+  <section class="block reveal" style="border-top:none;">
+    <div class="cv-section">
+      <h2>Experience</h2>
+      <div class="cv-entry">
+        <div class="role">[Job Title] · [Company]</div>
+        <div class="meta">2024 — Present</div>
+        <p>[One or two sentences about what you did in this role and what you're proud of.]</p>
+      </div>
+      <div class="cv-entry">
+        <div class="role">[Job Title] · [Company]</div>
+        <div class="meta">2021 — 2024</div>
+        <p>[One or two sentences about what you did in this role.]</p>
+      </div>
+    </div>
+
+    <div class="cv-section">
+      <h2>Education</h2>
+      <div class="cv-entry">
+        <div class="role">[Degree] · [Institution]</div>
+        <div class="meta">[Years]</div>
+        <p>[Optional detail — honors, focus area, etc.]</p>
+      </div>
+    </div>
+
+    <div class="cv-section">
+      <h2>Skills</h2>
+      <div class="skill-tags">
+        <span>[Skill one]</span>
+        <span>[Skill two]</span>
+        <span>[Skill three]</span>
+        <span>[Skill four]</span>
+        <span>[Skill five]</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:14px; width:100%;">
+    <span>© 2026 Rabbin Zaman</span>
+    <div class="social">
+      <a href="mailto:you@example.com">Email</a>
+      <a href="#">GitHub</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">Instagram</a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="three-bg.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

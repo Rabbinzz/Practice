@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blog — Rabbin Zaman</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+<div id="noise"></div>
+<div id="cursor-ring"></div>
+<div id="cursor-dot"></div>
+
+<header class="site-header">
+  <div class="wrap nav-row">
+    <a href="index.html" class="site-mark">Rabbin Zaman</a>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="blog.html" class="active">Blog</a>
+      <a href="cv.html">CV</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div style="display:flex; align-items:center; gap:14px;">
+      <button id="theme-toggle" aria-label="Toggle theme">☀</button>
+      <button id="nav-burger" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <div class="page-head reveal">
+    <p class="eyebrow">Blog</p>
+    <h1>Notes & writing</h1>
+    <p>[A short line about what you write about — your field, your hobbies, or just things you think about.]</p>
+  </div>
+
+  <section class="block reveal" style="border-top:none;">
+    <div class="list-items">
+      <a class="list-item" href="#">
+        <div class="list-item-row">
+          <span class="list-title">[First post title]</span>
+          <span class="list-meta">Jan 2026</span>
+        </div>
+        <p class="list-desc">[A one-sentence teaser of what this post is about.]</p>
+      </a>
+      <a class="list-item" href="#">
+        <div class="list-item-row">
+          <span class="list-title">[Second post title]</span>
+          <span class="list-meta">Dec 2025</span>
+        </div>
+        <p class="list-desc">[A one-sentence teaser of what this post is about.]</p>
+      </a>
+      <a class="list-item" href="#">
+        <div class="list-item-row">
+          <span class="list-title">[Third post title]</span>
+          <span class="list-meta">Nov 2025</span>
+        </div>
+        <p class="list-desc">[A one-sentence teaser of what this post is about.]</p>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:14px; width:100%;">
+    <span>© 2026 Rabbin Zaman</span>
+    <div class="social">
+      <a href="mailto:you@example.com">Email</a>
+      <a href="#">GitHub</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">Instagram</a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="three-bg.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

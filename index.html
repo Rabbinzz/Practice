@@ -3,15 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Your Name</title>
-<meta name="description" content="Your Name — personal website.">
+<title>Rabbin Zaman</title>
+<meta name="description" content="Rabbin Zaman — personal website.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<canvas id="bg-canvas"></canvas>
+<div id="noise"></div>
+<div id="cursor-ring"></div>
+<div id="cursor-dot"></div>
+
 <header class="site-header">
   <div class="wrap nav-row">
-    <a href="index.html" class="site-mark">Your Name</a>
+    <a href="index.html" class="site-mark">Rabbin Zaman</a>
     <nav class="site-nav">
       <a href="index.html" class="active">Home</a>
       <a href="about.html">About</a>
@@ -30,48 +35,59 @@
 <main class="wrap">
 
   <section class="hero">
-    <p class="kicker">Personal site</p>
-    <h1>Hi, I'm [Your Name].</h1>
-    <p class="desc">[Write one or two sentences about who you are and what you do — this is the first thing people read, so keep it simple and honest.]</p>
+    <p class="eyebrow">Personal site — 2026</p>
+    <h1>Hi, I'm Rabbin Zaman — <em>I make things.</em></h1>
+    <p class="desc">[Write one or two sentences about who you are and what you do. Keep it plain and confident — this line does the most work on the whole page.]</p>
     <div class="cta-row">
       <a href="portfolio.html" class="btn btn-solid">See my work</a>
       <a href="contact.html" class="btn btn-ghost">Get in touch</a>
     </div>
+    <div class="scroll-cue"><span class="line"></span> Scroll</div>
   </section>
 
-  <section class="block">
+  <section class="block reveal">
     <div class="block-head">
-      <h2>What I'm doing now</h2>
+      <div>
+        <span class="index">01</span>
+        <h2>What I'm doing now</h2>
+      </div>
     </div>
-    <p style="max-width:60ch; color:var(--text-soft); font-size:16px; line-height:1.7;">
-      [A short paragraph about what you're currently working on, learning, or thinking about. This is the kind of personal, up-to-date detail that makes a site feel alive rather than static.]
+    <p style="max-width:60ch; color:var(--text-soft); font-size:16.5px; line-height:1.75;">
+      [A short paragraph about what you're currently working on, learning, or thinking about — the detail that makes a site feel alive rather than static.]
     </p>
   </section>
 
-  <section class="block">
+  <section class="block reveal">
     <div class="block-head">
-      <h2>Find your way around</h2>
+      <div>
+        <span class="index">02</span>
+        <h2>Find your way around</h2>
+      </div>
     </div>
     <div class="grid-cards">
       <a class="card" href="about.html">
         <span class="tag">About</span>
         <h3>Who I am</h3>
         <p>Background, story, and the things I care about.</p>
+        <span class="arrow">→</span>
       </a>
       <a class="card" href="portfolio.html">
         <span class="tag">Portfolio</span>
         <h3>What I've built</h3>
         <p>Selected projects and things I've made.</p>
+        <span class="arrow">→</span>
       </a>
       <a class="card" href="blog.html">
         <span class="tag">Blog</span>
         <h3>What I write</h3>
         <p>Notes, essays, and things worth remembering.</p>
+        <span class="arrow">→</span>
       </a>
       <a class="card" href="cv.html">
         <span class="tag">CV</span>
         <h3>Where I've worked</h3>
         <p>Experience, education, and skills.</p>
+        <span class="arrow">→</span>
       </a>
     </div>
   </section>
@@ -80,7 +96,7 @@
 
 <footer class="site-footer">
   <div class="wrap" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:14px; width:100%;">
-    <span>© 2026 Your Name</span>
+    <span>© 2026 Rabbin Zaman</span>
     <div class="social">
       <a href="mailto:you@example.com">Email</a>
       <a href="#">GitHub</a>
@@ -90,6 +106,8 @@
   </div>
 </footer>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="three-bg.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
